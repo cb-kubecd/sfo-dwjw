@@ -1,1 +1,10 @@
 buildPack: javascript
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      preBuild:
+        steps:
+        - image: busybox
+          command: echo
+          args:
+          - XXXXXXXXXXXXXXX
